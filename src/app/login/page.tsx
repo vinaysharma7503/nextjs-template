@@ -4,6 +4,12 @@ import { useRouter } from "next/navigation"
 import axios from "axios";
 import { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Login Page',
+  description: '...',
+}
 
 const Login = () => {
   const router = useRouter()
